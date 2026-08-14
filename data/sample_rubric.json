@@ -1,0 +1,50 @@
+[
+  {
+    "id": "R1", "dimension": "项目深度", "max_deduction": 15,
+    "criterion": "能讲清项目背景、你的具体角色与亲手实现的部分",
+    "evidence_hint": "是否出现具体技术栈、模块名、你的贡献占比",
+    "improvement": "用「背景→你的角色→亲手实现→结果」四段式复述项目，明确贡献占比。"
+  },
+  {
+    "id": "R2", "dimension": "技术细节", "max_deduction": 15,
+    "criterion": "关键实现细节、工程权衡与踩过的坑可被追问验证",
+    "evidence_hint": "是否讲得出选型理由、失败尝试、复盘",
+    "improvement": "为每个项目准备 1 个「踩坑→定位→解决」故事，含具体代码/参数。"
+  },
+  {
+    "id": "R3", "dimension": "量化成果", "max_deduction": 10,
+    "criterion": "用数据量化成果（指标提升%、论文/专利贡献）",
+    "evidence_hint": "是否给出可验证的数字与对比基线",
+    "improvement": "为每个成果配「起点→手段→终点」的量化对比，避免「效果不错」这类空话。"
+  },
+  {
+    "id": "R4", "dimension": "动机匹配", "max_deduction": 10,
+    "criterion": "申请动机/方向与导师或岗位高度匹配且有依据",
+    "evidence_hint": "是否引用对方具体研究方向/岗位要求来佐证",
+    "improvement": "把对方方向/岗位 JD 与自己的经历点状对齐，准备 3 条匹配论据。"
+  },
+  {
+    "id": "R5", "dimension": "表达清晰", "max_deduction": 10,
+    "criterion": "逻辑清晰、重点突出、不绕弯",
+    "evidence_hint": "结构（结论先行/STAR）是否清楚",
+    "improvement": "练习「结论先行 + 三点支撑」的回答结构，控制时长。"
+  },
+  {
+    "id": "R6", "dimension": "诚实度", "max_deduction": 15,
+    "criterion": "不夸大、不编造；不会的部分坦诚并说明学习路径",
+    "evidence_hint": "是否出现无法自洽的夸大表述",
+    "improvement": "遇到不会的，坦诚 + 给出「我将如何补齐」的路径，反而加分。"
+  },
+  {
+    "id": "R7", "dimension": "材料完整度", "max_deduction": 10, "material": true,
+    "criterion": "提交的简历/论文/代码/成绩单等材料齐全",
+    "evidence_hint": "对照必需材料清单逐项核对",
+    "improvement": "面试前按清单备齐材料；缺失项主动说明补救计划。"
+  },
+  {
+    "id": "R8", "dimension": "英语/海外适配", "max_deduction": 10,
+    "criterion": "海外phd/英文面试下，英语表达与学术写作可读",
+    "evidence_hint": "是否出现明显语法/术语错误（仅海外phd等场景计）",
+    "improvement": "针对海外场景练习英文叙述研究经历，熟记专业术语。"
+  }
+]

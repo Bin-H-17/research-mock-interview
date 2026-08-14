@@ -1,0 +1,60 @@
+# 科研模拟面试 Hermes Skill — 配置样例
+# 用法：复制本文件为 config.yaml，按需修改后通过 `--config config.yaml` 传入。
+# 说明：PyYAML 为可选依赖；若未安装 PyYAML，Skill 会自动回退到内置默认配置（即本文件内容）。
+
+skill:
+  name: research-mock-interview
+  tenant_id: local                # 本地单租户；owner 删除权闭环标识（purge 据此清除）
+  data_dir: ./data_store          # 本地数据目录；可整体删除（隐私铁律：可删除、不出域）
+  no_telemetry: true              # 铁律：无遥测、不出域
+
+llm:
+  backend: mock                   # mock | ollama | cloud（可插拔 LLM 后端）
+  mock:
+    mode: rule                    # 离线规则引擎，零外部依赖，用于 demo 与无网环境
+  ollama:
+    base_url: http://localhost:11434   # 本地 Ollama 默认地址
+    model: qwen2.5:7b             # 用户可自选本地模型
+    temperature: 0.7
+  cloud:
+    # BYOK：密钥仅来自环境变量，绝不落盘、绝不硬编码
+    api_base: https://api.openai.com/v1
+    model: gpt-4o-mini
+    api_key_env: RMI_LLM_API_KEY
+    temperature: 0.7
+
+interview:
+  default_scenario: 保研          # 保研 | 申博 | 求职 | 答辩 | 组会 | 海外phd
+  hard_block_followup: true       # 讲项目/代码硬阻塞追问开关（差异化护城河）
+  auto_report: true               # 结束后自动生成复盘报告
+
+voice:
+  enabled: false                  # 设为 true 或运行加 --voice 启用语音双工模式（v1.1 新增，可插拔）
+  backend: mock                   # 简单模式：mock（离线零依赖）/ offline（vosk+pyttsx3）/ cloud（whisper+edge）
+  stt:
+    backend: mock                 # mock | vosk | whisper
+    mock:
+      script:                    # mock 模式下自动「念出」的候选人语音；末尾 /finish 结束
+        - "我在这个项目里主要负责特征工程和模型训练，用的 PyTorch 和 DGL。"
+        - "整体效果还行吧，具体指标我记不太清了。"
+        - "/finish"
+    vosk:
+      model_path: ""              # 离线模型目录（如 vosk-model-small-cn-0.22），缺失则运行时抛错提示
+      rate: 16000
+      phrase_timeout: 3.0
+      language: cn
+    whisper:
+      model_size: base            # tiny/base/small/medium/large-v3/turbo
+      device: cpu
+      compute_type: int8
+      language: zh
+  tts:
+    backend: mock                 # mock | pyttsx3 | edge
+    pyttsx3:
+      rate: 150
+      volume: 0.9
+      voice: ""
+    edge:
+      voice: zh-CN-XiaoxiaoNeural
+      rate: "+0%"
+      volume: "+0%"

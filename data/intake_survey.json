@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": 2,
+    "desc": "面试前信息调查，用于定制面试官/公司画像"
+  },
+  "fields": [
+    {
+      "key": "applicant_name",
+      "q": "你的称呼？",
+      "type": "text"
+    },
+    {
+      "key": "goal_type",
+      "q": "申请类型？",
+      "type": "choice",
+      "options": [
+        "保研",
+        "申博",
+        "科研岗求职",
+        "答辩",
+        "组会汇报",
+        "海外phd"
+      ]
+    },
+    {
+      "key": "org_name",
+      "q": "目标学校 / 公司 / 实验室名称？",
+      "type": "text"
+    },
+    {
+      "key": "position_or_program",
+      "q": "申请的具体岗位 / 项目 / 导师？",
+      "type": "text"
+    },
+    {
+      "key": "interviewer_name",
+      "q": "已知面试官姓名？（可空，能具体到人则画像更准）",
+      "type": "text"
+    },
+    {
+      "key": "interviewer_style",
+      "q": "你了解面试官的风格？",
+      "type": "choice",
+      "options": [
+        "严厉压力型",
+        "温和引导型",
+        "技术深挖型",
+        "不确定"
+      ]
+    },
+    {
+      "key": "known_focus",
+      "q": "面试官 / 岗位特别看重的方面？（可空）",
+      "type": "text"
+    },
+    {
+      "key": "timeline",
+      "q": "面试时间线 / 轮次？",
+      "type": "text"
+    },
+    {
+      "key": "materials_available",
+      "q": "你已有哪些材料？（多选）",
+      "type": "multichoice",
+      "options": [
+        "简历",
+        "论文/专利",
+        "项目代码",
+        "成绩单",
+        "推荐信",
+        "其他"
+      ]
+    },
+    {
+      "key": "extra_notes",
+      "q": "其他想让面试官关注或回避的点？",
+      "type": "text"
+    }
+  ],
+  "answers": {
+    "applicant_name": "",
+    "goal_type": "",
+    "org_name": "",
+    "position_or_program": "",
+    "interviewer_name": "",
+    "interviewer_style": "",
+    "known_focus": "",
+    "timeline": "",
+    "materials_available": "",
+    "extra_notes": ""
+  }
+}

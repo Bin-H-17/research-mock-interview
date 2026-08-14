@@ -1,0 +1,47 @@
+# 科研模拟面试 Hermes Skill 依赖声明
+#
+# 运行环境要求（架构决策 X5）：
+#   目标 Python 3.12；最低 Python 3.11
+#   验证：python --version
+#
+# 核心运行零硬性第三方依赖：
+#   mock / ollama / cloud 三种 LLM 后端均只使用 Python 标准库
+#   （sqlite3 持久化、urllib 网络调用、json 解析）。
+#   因此「开箱即跑」仅需一个支持的 Python 解释器。
+#
+# PyYAML 为「可选」依赖：
+#   仅当你希望使用 config.yaml（而非内置默认配置）时才需要。
+#   未安装 PyYAML 时，Skill 会自动回退到内置默认配置并打印提示。
+
+PyYAML>=6.0   # 可选：启用 YAML 配置（config.yaml）
+
+# ---------------------------------------------------------------------------
+# 语音交互（v1.1 新增，全部可选 / 懒加载，不影响核心零依赖）
+# 仅在启用真实语音（run --voice 且 backend 设为真实引擎）时才需要安装对应项。
+# 未安装时，mock 双工模式仍能离线跑通整条语音编排链路。
+#
+# 离线语音识别（二选一）：
+#   vosk           轻量，~50MB 模型，嵌入式/低资源友好（推荐中文离线首选）
+#   faster-whisper 高精度，CPU int8 可用，模型较大（base~150MB）
+# 麦克风采集（真实 STT 必需）：
+#   sounddevice + numpy
+# 离线语音合成：
+#   pyttsx3        系统原生语音引擎（Windows SAPI / macOS / Linux espeak）
+# 云端神经语音合成（需网络，音质佳）：
+#   edge-tts
+# 语音播放（edge-tts 自动播放可选）：
+#   playsound
+#
+# 示例（离线全本地方案）：
+#   pip install vosk sounddevice numpy pyttsx3
+# 示例（云端TTS+离线STT）：
+#   pip install faster-whisper sounddevice numpy edge-tts playsound
+# ---------------------------------------------------------------------------
+
+# vosk>=0.3.45            # 可选：离线 STT（轻量）
+# faster-whisper>=1.0.0   # 可选：离线 STT（高精度）
+# sounddevice>=0.4.6      # 可选：麦克风采集（真实 STT 必需）
+# numpy>=1.24             # 可选：麦克风采集依赖
+# pyttsx3>=2.90           # 可选：离线 TTS
+# edge-tts>=6.1.0         # 可选：云端神经 TTS（需网络）
+# playsound>=1.2.2        # 可选：edge-tts 自动播放
