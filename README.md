@@ -1,15 +1,15 @@
 # Research Mock Interview Coach / 科研模拟面试教练
 
-> AI-powered mock interviews for research, grad school & job applications — an agent-agnostic skill with interviewer personas, rubric scoring, and weakness analytics.
-> 面向科研 / 保研 / 求职的 AI 模拟面试 —— 与 Agent 无关的 Skill，内置面试官画像、rubric 评分与短板分析。
+> AI-powered mock interviews for research, grad school & job applications — with interviewer personas, rubric scoring, and weakness analytics.
+> 面向科研 / 保研 / 求职的 AI 模拟面试 —— 内置面试官画像、rubric 评分与短板分析。
 
-![Local-first](https://img.shields.io/badge/Local--first-✓-blue) ![Agent-agnostic](https://img.shields.io/badge/Agent--agnostic-✓-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Python](https://img.shields.io/badge/Python-%3E%3D3.11-3776AB)
+![Local-first](https://img.shields.io/badge/Local--first-✓-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Python](https://img.shields.io/badge/Python-%3E%3D3.11-3776AB)
 
 **[中文](#中文) | [English](#english)**
 
-A high-fidelity **mock interview** skill that any mainstream AI agent can call directly — without being tied to a single agent brand. It prepares you for **research interviews**, **grad school interviews**, **PhD interviews**, and job applications by running interviews that feel real: it collects your materials, probes gaps, scores against a known rubric, and produces a report with error analysis and improvement tips — plus cross-session weakness analytics.
+A high-fidelity **mock interview** skill that any mainstream AI agent can call directly. It prepares you for **research interviews**, **grad school interviews**, **PhD interviews**, and job applications by running interviews that feel real: it collects your materials, probes gaps, scores against a known rubric, and produces a report with error analysis and improvement tips — plus cross-session weakness analytics.
 
-一个高保真的 **模拟面试** Skill，任何主流 AI Agent 都可直接调用——不绑定任何单一 Agent 品牌。它通过真实感十足的面试流程，为 **科研面试**、**保研（grad school）面试**、**申博（PhD）面试** 与求职科研岗做准备：先收集你的材料、主动追问缺口、对照已知评分标准打分，再产出一份带错误分析与改进建议的 **面试复盘** 报告——外加跨场短板分析。
+一个高保真的 **模拟面试** Skill，任何主流 AI Agent 均可直接调用。它通过接近真实面试的流程，为 **科研面试**、**保研（grad school）面试**、**申博（PhD）面试** 与求职科研岗做准备：先收集你的材料、主动追问缺口、对照已知评分标准打分，再产出一份带错误分析与改进建议的 **面试复盘** 报告——外加跨场短板分析。作者根据自身需求定制并在合理范围内扩展完善，最终产出此 skill。
 
 ---
 
@@ -27,14 +27,12 @@ A high-fidelity **mock interview** skill that any mainstream AI agent can call d
 - **Cross-session weakness analytics** — answers from multiple sessions are aggregated into a **weakness analytics / 短板库**, so recurring gaps surface over time.
 - **Local-first privacy** — everything runs locally with SQLite storage, BYOK, no telemetry, and a `purge` command to delete your data.
 
-### Why it's different
+### Features
 
-Most interview tools just dump questions. This one behaves like a **real interview**:
-
-1. **You submit materials** → if they are insufficient, the agent **actively probes** for what's missing instead of pretending everything is fine.
-2. **Can't produce it? You lose points.** Material gaps translate into explicit deductions, mirroring how committees actually weigh evidence.
-3. **The agent knows the bar in advance.** A pre-defined rubric of deduction points is compared against your performance — you are judged against a known standard, not vibes.
-4. **Custom interviewer persona.** Questions are framed from a specific interviewer/lab perspective, not generic prompts.
+1. **Materials are collected with active follow-up** — if the submitted materials are insufficient, the agent **proactively probes** for what's missing instead of pretending everything is fine.
+2. **Gaps translate into deductions** — material gaps become explicit point deductions, mirroring how committees actually weigh evidence.
+3. **The agent knows the bar in advance** — a pre-defined rubric of deduction points is compared against your performance; you are judged against a known standard.
+4. **Custom interviewer persona** — questions are framed from a specific interviewer/lab perspective, not generic prompts.
 
 ### Quick start
 
@@ -111,7 +109,7 @@ Released under the [MIT License](LICENSE).
 
 ### 这是什么
 
-**科研模拟面试教练（Research Mock Interview Coach）** 是一个 **agent-agnostic（不绑定任何单一 Agent 品牌）** 的 **模拟面试** Skill，可被各大主流 AI Agent 直接调用。它帮助你为 **科研面试**、**保研面试**、**申博面试（PhD interview）**、**grad school interview** 以及求职科研岗做高还原度的 **interview prep**：先收集材料与定制 **面试官画像**，再像真实面试一样进行（材料收集、硬阻塞追问、基于评分标准的扣分、最终出具带错误分析与改进建议的 **面试复盘** 报告），并支持跨场 **短板库** 聚合分析。本地优先、隐私友好（BYOK、无遥测、数据可删）。
+**科研模拟面试教练（Research Mock Interview Coach）** 是一个 **模拟面试** Skill，可被各大主流 AI Agent 直接调用。它帮助你为 **科研面试**、**保研面试**、**申博面试（PhD interview）**、**grad school interview** 以及求职科研岗做高还原度的 **interview prep**：先收集材料与定制 **面试官画像**，再像真实面试一样进行（材料收集、硬阻塞追问、基于评分标准的扣分、最终出具带错误分析与改进建议的 **面试复盘** 报告），并支持跨场 **短板库** 聚合分析。本地优先、隐私友好（BYOK、无遥测、数据可删）。作者根据自身需求定制并在合理范围内扩展完善，最终产出此 skill。
 
 ### 核心能力
 
@@ -125,14 +123,12 @@ Released under the [MIT License](LICENSE).
 - **跨场短板聚合（weakness analytics / 短板库）**：多场答案聚合进 **短板库**，让反复出现的短板随时间浮现。
 - **本地优先隐私**：本地 SQLite、BYOK、无遥测、`purge` 删除权。
 
-### 为什么不同
+### 特点
 
-多数面试工具只是扔题目。本工具像 **真实面试**：
-
-1. **你提交材料** → 不足时 agent **主动追问**缺失项，而非假装一切正常。
-2. **给不出就扣分**：材料缺口转化为明确扣分，对应委员会如何真正权衡证据。
-3. **agent 事先知道合格线**：以预置 **rubric** 对照表现，按已知标准评判。
-4. **定制面试官画像**：问题从具体面试官 / 实验室视角出发，而非泛化提示词。
+1. **材料收集与缺失追问** — 用户提交材料不足时，agent **主动追问**缺失项，而非假装一切正常。
+2. **缺口转化为扣分** — 材料缺口转化为明确扣分，对应委员会如何真正权衡证据。
+3. **agent 事先知道合格线** — 以预置 **rubric** 对照表现，按已知标准评判。
+4. **定制面试官画像** — 问题从具体面试官 / 实验室视角出发，而非泛化提示词。
 
 ### 快速开始
 
