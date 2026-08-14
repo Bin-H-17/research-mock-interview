@@ -1,10 +1,15 @@
 # Research Mock Interview Coach / 科研模拟面试教练
 
 > AI-powered mock interviews for research, grad school & job applications — an agent-agnostic skill with interviewer personas, rubric scoring, and weakness analytics.
+> 面向科研 / 保研 / 求职的 AI 模拟面试 —— 与 Agent 无关的 Skill，内置面试官画像、rubric 评分与短板分析。
 
 ![Local-first](https://img.shields.io/badge/Local--first-✓-blue) ![Agent-agnostic](https://img.shields.io/badge/Agent--agnostic-✓-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Python](https://img.shields.io/badge/Python-%3E%3D3.11-3776AB)
 
+**[中文](#中文) | [English](#english)**
+
 A high-fidelity **mock interview** skill that any mainstream AI agent can call directly — without being tied to a single agent brand. It prepares you for **research interviews**, **grad school interviews**, **PhD interviews**, and job applications by running interviews that feel real: it collects your materials, probes gaps, scores against a known rubric, and produces a report with error analysis and improvement tips — plus cross-session weakness analytics.
+
+一个高保真的 **模拟面试** Skill，任何主流 AI Agent 都可直接调用——不绑定任何单一 Agent 品牌。它通过真实感十足的面试流程，为 **科研面试**、**保研（grad school）面试**、**申博（PhD）面试** 与求职科研岗做准备：先收集你的材料、主动追问缺口、对照已知评分标准打分，再产出一份带错误分析与改进建议的 **面试复盘** 报告——外加跨场短板分析。
 
 ---
 
@@ -99,6 +104,8 @@ See [ROADMAP.md](ROADMAP.md) for the plan (weakness visualization, structured sc
 Released under the [MIT License](LICENSE).
 
 ---
+
+<a id="中文"></a>
 
 ## 中文文档
 
