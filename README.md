@@ -9,7 +9,7 @@
 
 A high-fidelity **mock interview** skill that any mainstream AI agent can call directly. It prepares you for **research interviews**, **grad school interviews**, **PhD interviews**, and job applications by running interviews that feel real: it collects your materials, probes gaps, scores against a known rubric, and produces a report with error analysis and improvement tips — plus cross-session weakness analytics.
 
-一个高保真的 **模拟面试** Skill，任何主流 AI Agent 均可直接调用。它通过接近真实面试的流程，为 **科研面试**、**保研（grad school）面试**、**申博（PhD）面试** 与求职科研岗做准备：先收集你的材料、主动追问缺口、对照已知评分标准打分，再产出一份带错误分析与改进建议的 **面试复盘** 报告——外加跨场短板分析。作者根据自身需求定制并在合理范围内扩展完善，最终产出此 skill。
+一个高保真的 **模拟面试** Skill，任何主流 AI Agent 均可直接调用。它通过接近真实面试的流程，为 **科研面试**、**保研（grad school）面试**、**申博（PhD）面试** 与求职科研岗做准备：先收集你的材料、主动追问缺口、对照已知评分标准打分，再产出一份带错误分析与改进建议的 **面试复盘** 报告——外加跨场短板分析。
 
 ---
 
