@@ -4,6 +4,8 @@
 > 面向科研 / 保研 / 求职的 AI 模拟面试 —— 内置面试官画像、rubric 评分与短板分析。
 
 ![Local-first](https://img.shields.io/badge/Local--first-✓-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Python](https://img.shields.io/badge/Python-%3E%3D3.11-3776AB)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Bin-H-17/research-mock-interview/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Bin-H-17/research-mock-interview)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **[中文](#中文) | [English](#english)**
 
