@@ -25,7 +25,7 @@ llm:
 
 interview:
   default_scenario: 保研          # 保研 | 申博 | 求职 | 答辩 | 组会 | 海外phd
-  hard_block_followup: true       # 讲项目/代码硬阻塞追问开关（差异化护城河）
+  hard_block_followup: true       # 讲项目/代码硬阻塞追问开关（差异化特点）
   auto_report: true               # 结束后自动生成复盘报告
 
 voice:

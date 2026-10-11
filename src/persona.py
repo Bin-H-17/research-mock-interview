@@ -36,7 +36,7 @@ def render_intake_markdown(survey: dict) -> str:
     lines = [
         "# 面试前信息调查（Intake Survey）",
         "",
-        "> 填写后用于全方位搜集信息并定制面试官 / 公司画像。可直接在下方补充答案，或另存为 JSON 供 `persona` 命令读取。",
+        "> 填写后用于全面搜集信息并定制面试官 / 公司画像。可直接在下方补充答案，或另存为 JSON 供 `persona` 命令读取。",
         "",
     ]
     for f in survey["fields"]:
